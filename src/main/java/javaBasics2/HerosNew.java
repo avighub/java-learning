@@ -7,4 +7,5 @@ public class HerosNew {
     protected void showPowers() {
         System.out.println("Power of Hero:" + power_healing);
     }
+
 }
