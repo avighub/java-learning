@@ -1,6 +1,6 @@
 package MapJava;
 
-import DataProvider.AthleteDataProvider;
+import dataprovider.AthleteDataProvider;
 import Utility.ObjectMapperUtil;
 import org.testng.annotations.Test;
 

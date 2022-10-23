@@ -1,4 +1,4 @@
-package DataProvider;
+package dataprovider;
 
 import Utility.HelperReadFile;
 import org.testng.annotations.DataProvider;

@@ -1,4 +1,4 @@
-package java8.ConsumerInt;
+package functionalprogramming.consumerint;
 
 import org.testng.annotations.Test;
 
