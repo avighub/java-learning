@@ -1,4 +1,4 @@
-package javaOOP.string;
+package oop.string;
 
 public class StringPrograms {
     public static void main(String[] args) {
