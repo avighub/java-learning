@@ -1,6 +1,5 @@
 package functionalprogramming.consumerint;
 
-import org.testng.annotations.Test;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -52,17 +51,14 @@ public class BiConsumerExamples {
     }
 
 
-    @Test
     public void testPropUsingJava7() throws IOException {
         getPropertiesValueJava7();
     }
 
-    @Test
     public void testPropUsingJava8() throws IOException {
         getPropertiesValueJava8();
     }
 
-    @Test
     public void testMapUsingJava8() {
         getValuesFromMapUsingJava8();
     }
