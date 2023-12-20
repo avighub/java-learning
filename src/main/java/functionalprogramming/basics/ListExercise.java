@@ -20,29 +20,24 @@ public class ListExercise {
       listOfCycleBrands.add("kona");
       listOfCycleBrands.add("giant");
 
-      System.out.println("Original List: \n" + listOfCycleBrands);
+      System.out.println("Original List: " + listOfCycleBrands);
 
       ListExercise listExercise = new ListExercise();
 
       ArrayList<String> listWithDuplicateRemoved = listExercise.removeDuplicateFromList(listOfCycleBrands);
-      System.out.println("List After removing duplicates: \n" + listWithDuplicateRemoved);
+      System.out.println("List After removing duplicates: " + listWithDuplicateRemoved);
 
-      System.out.println("List after sorting: \n" + listExercise.sortList(listWithDuplicateRemoved));
+      System.out.println("List after sorting: " + listExercise.sortList(listWithDuplicateRemoved));
 
-      listExercise.printTextStartingByChar("h",listWithDuplicateRemoved);
+      listExercise.printTextStartingByChar("h", listWithDuplicateRemoved);
 
 
-      System.out.println("===== Solving the problem using java8=======");
-
+      // Solving the problem using stream
       listOfCycleBrands.stream()
               .distinct()
               .sorted()
-              .filter(s->s.startsWith("h"))
+              .filter(s -> s.startsWith("h"))
               .forEach(System.out::println);
-
-
-
-
     }
 
   ArrayList<String> removeDuplicateFromList(ArrayList<String> list)
@@ -58,10 +53,10 @@ public class ListExercise {
 
   void printTextStartingByChar(String c, ArrayList<String> list)
     {
-      System.out.println("Strings starting with character "+c);
+      System.out.println("Strings starting with character: " + c);
       for (String s : list) {
         if (s.startsWith(c)) {
-          System.out.println(s);
+          System.out.println(c);
         }
       }
     }
