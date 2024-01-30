@@ -1,5 +1,8 @@
 package oop.inheritance;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class Child extends Parent {
 
   public static void main(String[] args)
@@ -16,6 +19,7 @@ public class Child extends Parent {
       parent.print();
       parent.show();
 
+
       /* To access sub class methods, super class reference needs to be downcast to sub class reference. Note here we can down cast
 		to a up cast reference only. */
 
@@ -28,13 +32,13 @@ public class Child extends Parent {
   @Override
   public void print()
     {
-      System.out.println("Child Class Print");
+      log.info("Child Class Print");
     }
 
 
   public void show()
     {
-      System.out.println("Child Class Show");
+      log.info("Child Class Show");
     }
 
 }
