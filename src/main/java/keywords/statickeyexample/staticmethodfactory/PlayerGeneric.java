@@ -1,12 +1,15 @@
-package statickeyword.staticmethodfactory;
+package keywords.statickeyexample.staticmethodfactory;
+
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.Objects;
 
+@Slf4j
 public class PlayerGeneric {
 
-  private String name;
-  private int age;
-  private String skill;
+  private final String name;
+  private final int age;
+  private final String skill;
 
 
   PlayerGeneric(String name, int age, String skill)
@@ -23,10 +26,10 @@ public class PlayerGeneric {
   public static void main(String[] args)
     {
       PlayerGeneric allRounder = new PlayerGeneric("Sachin", 20, null);
-      System.out.println("Name:" + allRounder.name + "|| Age: " + allRounder.age + "|| Skill: " + allRounder.skill);
+      log.info("Name: {} , Age: {} ,Skill: {} ", allRounder.name, allRounder.age, allRounder.skill);
 
       PlayerGeneric cricketPlayerGeneric = new PlayerGeneric("Sachin", 20, "Cricket");
-      System.out.println("Name:" + cricketPlayerGeneric.name + "|| Age: " + cricketPlayerGeneric.age + "|| Skill: " + cricketPlayerGeneric.skill);
+      log.info("Name: {},Age: {},Skill: {} ", cricketPlayerGeneric.name, cricketPlayerGeneric.age, cricketPlayerGeneric.skill);
     }
 
 

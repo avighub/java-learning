@@ -1,4 +1,4 @@
-package statickeyword;
+package keywords.statickeyexample;
 
 public class StaticBlock {
   /**

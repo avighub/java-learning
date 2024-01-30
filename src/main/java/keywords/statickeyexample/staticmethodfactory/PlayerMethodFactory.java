@@ -1,11 +1,19 @@
-package statickeyword.staticmethodfactory;
+package keywords.statickeyexample.staticmethodfactory;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class PlayerMethodFactory {
 
   private String name;
   private int age;
   private String skill;
 
+  public static void main(String[] args)
+    {
+      log.info(getCricketPlayer("Sachin", 60).skill);
+      log.info(getFootballPlayer("Messi", 60).skill);
+    }
 
   private PlayerMethodFactory(String name, int age, String skill)
     {
@@ -24,10 +32,5 @@ public class PlayerMethodFactory {
       return new PlayerMethodFactory(name, age, "Football");
     }
 
-  public static void main(String[] args)
-    {
-      System.out.println(getCricketPlayer("Sachin", 60).toString());
-      System.out.println(getFootballPlayer("Messi", 60).skill);
-    }
 
 }
