@@ -1,4 +1,4 @@
-package pojo;
+package pojo.traditional;
 
 public class Address {
 

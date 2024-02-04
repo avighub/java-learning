@@ -1,6 +1,7 @@
-package pojo;
+package pojo.traditional;
 
-public class CreateAthlete {
+
+public class Athlete {
 
   /**
    * defining as private as encapulation to be used only via getter and setter
@@ -12,11 +13,11 @@ public class CreateAthlete {
 
   public static void main(String[] args)
     {
-      CreateAthlete createAthlete = new CreateAthlete("Avishek", "Behera", "Odisha", "SR");
-      System.out.println(createAthlete);
+      Athlete athlete = new Athlete("Avishek", "Behera", "Odisha", "SR");
+      System.out.println(athlete);
     }
 
-  public CreateAthlete(String firstName, String lastName, String state, String brmStatus)
+  public Athlete(String firstName, String lastName, String state, String brmStatus)
     {
       this.firstName = firstName;
       this.lastName = lastName;
