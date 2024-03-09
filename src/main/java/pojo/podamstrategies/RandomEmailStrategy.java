@@ -9,6 +9,6 @@ import java.util.List;
 public class RandomEmailStrategy implements AttributeStrategy<String> {
   @Override
   public String getValue(Class<?> aClass, List<Annotation> list) {
-    return FakerService.getRandomString() + "@example.com";
+    return FakerService.getRandomEmail();
   }
 }
