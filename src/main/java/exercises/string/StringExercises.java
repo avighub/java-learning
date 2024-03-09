@@ -1,4 +1,4 @@
-package string;
+package exercises.string;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -7,10 +7,10 @@ public class StringExercises {
   public static void main(String[] args) {
     printWordsWithEvenLength("Sky is blue and vast");
 
-    System.out.println(getSubstring("world", 2)); //returns substring starting from specified index
-    System.out.println(getIndexOfMatchedString("world", "r")); //returns 2
-    System.out.println(getExtensionNameOfAFile("movie.mp4")); //returns mp4
-    System.out.println(getExtensionNameOfAFileUsingSplit("movie.mp4")); //returns mp4
+    log.info(getSubstring("world", 2)); //returns substring starting from specified index
+    log.info(String.valueOf(getIndexOfMatchedString("world", "r"))); //returns 2
+    log.info(getExtensionNameOfAFile("movie.mp4")); //returns mp4
+    log.info(getExtensionNameOfAFileUsingSplit("movie.mp4")); //returns mp4
   }
 
   static void printWordsWithEvenLength(String sentence) {
@@ -39,7 +39,7 @@ public class StringExercises {
   }
 
   static String getExtensionNameOfAFileUsingSplit(String fileNameWithExtension) {
-    String splitStrings[] = fileNameWithExtension.split("\\.");
+    String[] splitStrings = fileNameWithExtension.split("\\.");
     return splitStrings[1];
   }
 }

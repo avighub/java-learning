@@ -1,9 +1,12 @@
-package string;
+package exercises.string;
+
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+@Slf4j
 public class StringRepeatations {
 
   public static void main(String[] args)
@@ -27,7 +30,7 @@ public class StringRepeatations {
         occurrenceLog.put(c, occuranceCount);
         occuranceCount = 0;
       }
-      System.out.println(occurrenceLog);
+      log.info(occurrenceLog.toString());
     }
 
   static void printRepeatedOccurrenceOfCharacterInStringUsingStreams()
@@ -37,6 +40,6 @@ public class StringRepeatations {
               .mapToObj(c -> (char) c)
               .collect(Collectors.groupingBy(c -> c, Collectors.counting()));
 
-      System.out.println(occurrenceLog);
+      log.info(occurrenceLog.toString());
     }
 }
