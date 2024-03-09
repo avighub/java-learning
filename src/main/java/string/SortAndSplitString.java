@@ -1,4 +1,4 @@
-package collectionsframework.iterable.collection.list.arraylist;
+package string;
 
 import java.io.File;
 

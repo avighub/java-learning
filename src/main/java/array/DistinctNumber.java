@@ -1,14 +1,17 @@
-package collectionsframework.iterable.collection.list.arraylist;
+package array;
+
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
 
+@Slf4j
 public class DistinctNumber {
   public static void main(String[] args)
     {
       //      int numbers[] = {1, 1, 2, 2, 3, 3, 4, 5}; // C-Style array declaration
       int[] numbers = {1, 1, 2, 2, 3, 3, 4, 5}; // Java style array declaration
 
-      System.out.println(findDistinctNumber(numbers));
+      log.info(findDistinctNumber(numbers).toString());
     }
 
   // Time complexity : O(n^2)

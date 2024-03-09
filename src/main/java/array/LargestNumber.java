@@ -1,16 +1,18 @@
-package collectionsframework.iterable.collection.list.arraylist;
+package array;
+
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.Arrays;
 
+@Slf4j
 public class LargestNumber {
 
   public static void main(String[] args)
     {
       int[] numbers = {1, 1, 2, 2, 3, 3, 4, 5};
-      System.out.println(findLargestNumberUsingIteration(numbers));
-      System.out.println(findLargestNumberUsingStream(numbers));
-      System.out.println(findLargestNumberUsingSort(numbers));
-
+      log.info(findLargestNumberUsingIteration(numbers).toString());
+      log.info(findLargestNumberUsingStream(numbers).toString());
+      log.info(findLargestNumberUsingSort(numbers).toString());
     }
 
   // Time Complexity: O(n), where n represents the size of the given array.

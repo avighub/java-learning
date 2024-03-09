@@ -1,4 +1,4 @@
-package exercises.string;
+package string;
 
 
 import lombok.extern.slf4j.Slf4j;

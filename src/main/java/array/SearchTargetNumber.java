@@ -1,4 +1,4 @@
-package dsa.linearsearch;
+package array;
 
 public class SearchTargetNumber {
 
