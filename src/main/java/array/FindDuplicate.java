@@ -1,29 +1,27 @@
 package array;
 
-import lombok.extern.slf4j.Slf4j;
-
+import java.util.ArrayList;
 import java.util.HashSet;
 
-@Slf4j
 public class FindDuplicate {
   public static void main(String[] args) {
     int[] numbers = {2, 3, 3, 4, 5, 2, 6, 5, 6};
-    log.info(findDuplicateElementInArrayUsingNestedFor(numbers).toString());
-    log.info(findDuplicateElementInArrayUsingHashSetLogic(numbers).toString());
+    System.out.println(findDuplicateElementInArrayUsingNestedFor(numbers));
+    System.out.println(findDuplicateElementInArrayUsingHashSetLogic(numbers));
   }
 
-  private static HashSet<Integer> findDuplicateElementInArrayUsingNestedFor(int[] numbers) {
-    HashSet<Integer> duplicates = new HashSet<>();
-    int count = 0;
+  private static ArrayList<Integer> findDuplicateElementInArrayUsingNestedFor(int[] numbers) {
+    ArrayList<Integer> duplicates = new ArrayList<>();
+    int count;
     for (int i = 0; i < numbers.length; i++) {
+      count=0;
       for (int j = 0; j < numbers.length; j++) {
         if (numbers[i] == numbers[j]) {
           count++;
         }
       }
-      if (count > 1) {
+      if (count > 1 && !duplicates.contains(numbers[i])) {
         duplicates.add(numbers[i]);
-        count = 0;
       }
     }
     return duplicates;
