@@ -1,6 +1,8 @@
 package array;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class ArrayBasics {
   /**
@@ -34,6 +36,14 @@ public class ArrayBasics {
     marks[3] = 50;
     marks[4] = 60;
     System.out.println(Arrays.toString(marks));
+
+    // Create a mutable list array
+    List<String> list = Arrays.asList("A", "B");
+    System.out.println("List before update: "+list);
+    list.set(0,"C");
+    System.out.println("List after replace: "+list);
+    list.add("Z"); // runtime error: java.lang.UnsupportedOperationException
+
   }
 
 
