@@ -1,0 +1,78 @@
+{
+  "orderQueue": [
+    {
+      "accountId": "1234",
+      "country": "IN",
+      "orders": [
+        {
+          "productId": "8838383383",
+          "quantity": 1,
+          "category": {
+            "name": "electronics",
+            "subCategory": {
+              "name": "laptop"
+            }
+          },
+          "statuses": [
+            {
+              "status": "pending",
+              "date": "2020-01-01"
+            },
+            {
+              "status": "shipped",
+              "date": "2020-01-02"
+            }
+          ]
+        },
+        {
+          "productId": "93399339939",
+          "quantity": 2,
+          "category": {
+            "name": "electronics",
+            "subCategory": {
+              "name": "laptop"
+            }
+          },
+          "statuses": [
+            {
+              "status": "pending",
+              "date": "2020-01-01"
+            },
+            {
+              "status": "shipped",
+              "date": "2020-01-02"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "accountId": "5678",
+      "country": "IN",
+      "orders": [
+        {
+          "productId": "123992222992",
+          "quantity": 1,
+          "category": {
+            "name": "electronics",
+            "subCategory": {
+              "name": "laptop"
+            }
+          }
+        },
+        {
+          "productId": "38838484848",
+          "quantity": 2,
+          "category": {
+            "name": "electronics",
+            "subCategory": {
+              "name": "laptop"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+
+
